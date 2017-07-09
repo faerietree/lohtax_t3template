@@ -1,4 +1,4 @@
-# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:template/Configuration/TypoScript/setup.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/template/Configuration/TypoScript/setup.ts">
 styles.content {
 
    # get content, left
