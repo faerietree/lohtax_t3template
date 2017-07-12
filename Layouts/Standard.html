@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sabine Balzer ist eine Fachkraft für Lohnabrechung und Buchhaltung" />
+<meta name="keywords" content="Sabine, Balzer, Lohnabrechnung, Buchhaltung, Fachkraft, Steuer" />
+<meta name="audience" content="All" />
+<meta name="author" content="Sabine Balzer LohTax" />
+<meta name="publisher" content="worlddevelopment" />
+<meta name="Robots" content="index,follow" />
+<meta name="revisit-after" content="1 Day" />
+<meta name="Language" content="German" />
+<meta name="Content-Language" content="de" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../fairyclasses.css" type="text/css" media="screen">
+<style>
+	/*<![CDATA[*/
+
+	/*]]>*/
+</style>
+<title>Sabine Balzer | Fachkraft, Lohnabrechnung, Buchhaltung, Steuer</title>
+</head>
+<body>
+<!-- ###DOCUMENT### -->
+
+
+<header>
+	<form class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="opacity: .99; filter: alpha(opacity=99);">
+
+			<a href="?" id="mini-logo">
+				<img src="fileadmin/template/images/logo.png" alt="" />
+				<span></span>
+			</a>
+
+			<!--
+			<button type="button">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<ul class="nav page-nav">
+				<li id="menu-item-home" class="home-link menu-item active">
+					<a href="#page-1">&#x21E1; top</a>
+				</li>
+				<li id="menu-item-contact" class="menu-item ">
+					<a href="#page-444">contact</a>
+				</li>
+			</ul>
+			-->
+		</nav>
+	</form>
+</header>
+
+<div class="skewed"></div>
+
+
+<div id="wrapper">
+
+<section>
+	<div class="container wrapper">
+		<f:render section="first_section"/>
+	</div>
+
+	<!-- for multipaging -->
+	<nav class="container" style="z-index: 1000000;">
+		<ul id="page-nav main-nav main-menu">
+			<f:cObject typoscriptObjectPath="lib.menu" />
+		</ul>
+		<!-- ###METANAV### -->
+		<!--<?php
+		include("../lib.debug.php");
+		include("dynamicmenu.config.php");
+		include("DynamicMenu.class.php");
+		?>-->
+		<!-- ###METANAV### End -->
+	</nav>
+
+</section>
+
+
+
+<!--
+HERE INBETWEEN IS WHERE AJAX LOADED DYNAMIC CONTENT CAN BE ADDED:
+-->
+<f:if condition="{content}">
+<f:then>
+<section class="content">
+	<div id="kontakt" class="marker"></div>
+	<div id="Kontakt" class="marker"></div>
+	<div class="container">
+		<f:render section="content"/>
+	</div>
+</section>
+</f:then>
+</f:if>
+
+
+<f:if condition="{content_right}">
+<f:then>
+<section class="content content_right">
+	<div id="lily" class="marker"></div>
+	<div class="container">
+		<f:render section="content_right"/>
+	</div>
+</section>
+</f:then>
+</f:if>
+
+
+<f:if condition="{content_left}">
+<f:then>
+<section class="content content_left">
+	<div id="services" class="marker"></div>
+	<div id="service" class="marker"></div>
+	<div class="container">
+		<p>Seite ist im Aufbau. Mehr Information folgt in Kürze.</p>
+		<f:render section="content_left"/>
+	</div>
+</section>
+</f:then>
+</f:if>
+
+
+
+
+<section>
+	<div id="referenzen" class="marker"></div>
+	<div id="Referenzen" class="marker"></div>
+	<div class="container">
+		<h2>Referenzen</h2>
+	<div id="gallery">
+	<div id="fullHolder">
+		<ul>
+			<li>
+				<input id="item1" name="gallery" type="radio"/>
+				<div>
+					<span>
+						PDF: Krumbach Magazin [7 MB]
+					</span>
+					<a href="https://hirschberg-text.de/fileadmin/user_upload/Krumbach_Magazin.pdf" target="_blank">
+						<img src="https://hirschberg-text.de/fileadmin/Krumbach_Magazin_A4_Titelseite.jpg" alt=""/>
+					</a>
+				</div>
+			</li>
+			<li>
+				<input id="item2" name="gallery" type="radio"/>
+				<div>
+					<span>
+						PDF: AWM_Auto-Special [6 MB]
+					</span>
+					<a href="../fileadmin/user_upload/AWM_Auto-Special.pdf" target="_blank">
+						<img src="../fileadmin/AWM_Auto-Special.jpg" alt=""/>
+					</a>
+				</div>
+			</li>
+			<li>
+				<input id="item3" name="gallery" type="radio"/>
+				<div>
+					<span>
+						PDF: Pferde - Mythos und Geschichte eines edlen Tieres [4 MB]
+					</span>
+					<a href="../fileadmin/user_upload/Pferde__Mythos_und_Geschichte_eines_edlen_Tieres.pdf" target="_blank">
+						<img src="../fileadmin/Pferde__Mythos_und_Geschichte_eines_edlen_Tieres.jpg" alt=""/>
+					</a>
+				</div>
+			</li>
+			<li>
+				<input id="item4" name="gallery" type="radio"/>
+				<div>
+					<span>
+						PDF: Fendt Focus Januar 2017: Kapitel Vario Getriebe [0.7 MB]
+					</span>
+					<a href="../fileadmin/user_upload/Fendt_Focus_2017-01_de__Chapter_Transmission_Vario.pdf" target="_blank">
+						<img src="../fileadmin/Fendt_Focus_2017-01_de.jpg" alt=""/>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="thumbHolder">
+		<ul id="momentum">
+			<li>
+				<label for="item1">
+					<img src="https://hirschberg-text.de/fileadmin/Krumbach_Magazin_A4_Titelseite.jpg" alt=""/>
+				</label>
+			</li>
+			<li>
+				<label for="item2">
+					<img src="../fileadmin/AWM_Auto-Special.jpg" alt=""/>
+				</label>
+			</li>
+			<li>
+				<label for="item3">
+					<img src="../fileadmin/Pferde__Mythos_und_Geschichte_eines_edlen_Tieres.jpg" alt=""/>
+					<img src="../fileadmin/Pferde__Mythos_und_Geschichte_eines_edlen_Tieres.jpg" alt=""/>
+				</label>
+			</li>
+			<li>
+				<label for="item4">
+					<img src="../fileadmin/Fendt_Focus_2017-01_de.jpg" alt=""/>
+				</label>
+			</li>
+			<li>
+				<label for="item5">
+					<img src="item_preview.jpg" alt=""/>
+				</label>
+			</li>
+			<li>
+				<label for="item6">
+					<img src="item_preview.jpg" alt=""/>
+				</label>
+			</li>
+			<li>
+				<label for="item7">
+					<img src="item_preview.jpg" alt=""/>
+				</label>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<!--
+	<h2 class="section-title">Contact</h2>
+		<div>
+			<h3>
+				Angelika Hirschberg
+			</h3>
+			<ul>
+				<li><span class="icon-signal contact-icon"></span> <span class="color">phone:</span> +49-</li>
+				<li><span class="icon-signal contact-icon"></span> <span class="color">fax:</span> +49-</li>
+				<li><span class="icon-envelope contact-icon"></span> <span class="color">e-mail:</span> <a class="email-link" href="mailto:hirschbergs@gmx.de">hirschbergs at gmx.de</a></li>
+			</ul>
+			<ul class="unstyled social">
+				<li>
+					<a href="https://www.opensourceecology.de/">
+						<span class="sprite-social fb-icon"></span>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/">
+						<span class="sprite-social tw-icon"></span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span class="sprite-social gp-icon"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		-->
+		<!-- TODO Render form plugin content. -->
+		<!-- ###CONTACTFORM### -->
+		<!--
+		<div>
+			<h3>
+				Send a message:
+			</h3>
+			<form action="" method="post" class="form" novalidate="novalidate">
+				<p>
+					<input name="name" size="40" class="" aria-required="true" placeholder="your name" type="text"/>
+					<input name="email" size="40" class="" aria-required="true" placeholder="your email" type="email"/>
+					<textarea name="message" cols="40" rows="10" class="" placeholder="your message"></textarea>
+				</p>
+				<p>
+					<input value="send" class="" type="submit">
+					<img style="visibility: hidden;" alt="sending ..." src="./images/ajax-loader.gif" class="ajax-loader"/>
+				</p>
+				<div class="fresponse-output"></div>
+			</form>
+		</div>
+		-->
+		<!-- ###CONTACTFORM### End -->
+	</div>
+</section>
+
+
+
+<section>
+	<div id="impressum" class="marker"></div>
+	<div class="container">
+		<h2>Impressum</h2>
+		<div>
+		<p>
+		Verantwortlich für diese Website gemäß §5 TMG
+		</p>
+		<p>
+		Sabine Balzer - <a href="https://lohtax.de">lohtax.de</a><br/>
+		Strasse X, Sulzbach<br/>
+		Telefon +49(0)...-...<br/>
+		info@lohtax.de<br/>
+		Kleinunternehmen nach §19 Abs. 1 UStG<br/>
+		Steuernummer xxx/xxx/xxxxx Finanzamt Karlsruhe
+		</div>
+
+		<h2>Technologie</h2>
+		<div>
+		worlddevelopment club - <a href="https://ciry.at">ciry.at</a>
+		</div>
+
+		<h2>Bildnachweis</h2>
+		<div>
+			<ul>
+				<li>
+				Hintergrundbild: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
+				</li>
+				<li>
+				Porträtfoto: , <a href="https://">.com</a>
+				</li>
+			</ul>
+		</div>
+
+		<h2>Haftungsausschluss
+		</h2>
+		<div>
+		<p><em>Inhalte:</em>
+		Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten verantwortlich. Nach §§ 8 bis 10 TMG besteht jedoch keine Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich.
+		</p>
+
+		<p><em>Links:</em>
+		Auf externe Inhalte besteht kein Einfluss. Der jeweilige Anbieter oder Betreiber ist verantwortlich. Zum Zeitpunkt der Verlinkung wurde auf mögliche Rechtsverstöße geprüft. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden solcher werden derartige Links umgehend entfernt.
+		</p>
+
+		<p><em>Urheberrecht:</em>
+		Jegliche Rechte aller verwendeten Medien obliegen den Urhebern, insofern nicht anderweitig gekennzeichnet.
+		Um entsprechenden Hinweis bei Verletzungen gegen dieses Recht ist gebeten.
+		<br />
+		<br />
+		Das Copyright für veröffentlichte, von der Betreiberin selbst erstellte Texte und Werke bleibt allein bei der Betreiberin der Seiten. Eine Vervielfältigung oder Verwendung von Texten, Fotos, Grafiken, Audio- oder  Videosequenzen in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung der Betreiber nicht gestattet.
+</p>
+
+
+<p><em>Datenschutzerklärung:</em>
+
+		Personenbezogene Daten werden vertraulich entsprechend der gesetzlichen Datenschutzvorschriften behandelt. Die Nutzung des Webauftritts ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten solche Daten (beispielsweise Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Die Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+</p>
+
+	</div>
+
+	</div>
+</section>
+
+
+<!-- fixed position elements: -->
+<f:render section="fixed_position_elements"/>
+
+
+</div><!-- wrapper -END -->
+
+<footer>
+	<div class="container">
+		<p>
+		All rights reserved.
+		</p>
+		<ul>
+		<li>
+			<a href="https://lohtax.de">
+				<img src="fileadmin/template/images/logo.png" alt="Mit uns k&ouml;nnen Sie rechnen."/>
+				<span id="mini-slogan"></span>
+			</a>
+		</li>
+		<li>
+			<a href="https://typo3.org">
+				<img src="typo3_src/typo3/sysext/backend/Resources/Public/Images/Logo.png" alt=""/>
+			</a>
+		</li>
+		<li>
+			<a href="https://ciry.at">
+				<img src="../images/worlddevelopment.png" alt=""/>
+			</a>
+		</li>
+		</ul>
+	</div>
+
+</footer>
+
+<script type="text/javascript" src="./js/site.js"></script>
+<script type="text/javascript" src="./js/title-animation.js"></script>
+
+	<!-- ###DOCUMENT### End -->
+</body></html>
