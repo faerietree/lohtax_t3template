@@ -58,10 +58,10 @@
 <div class="skewed"></div>
 
 
-<div id="wrapper">
+<form id="wrapper">
 
 <section>
-	<div class="container wrapper">
+	<div class="container">
 		<f:render section="first_section"/>
 	</div>
 
@@ -89,8 +89,8 @@ HERE INBETWEEN IS WHERE AJAX LOADED DYNAMIC CONTENT CAN BE ADDED:
 <f:if condition="{content}">
 <f:then>
 <section class="content">
-	<div id="kontakt" class="marker"></div>
-	<div id="Kontakt" class="marker"></div>
+	<div id="services" class="marker"></div>
+	<div id="service" class="marker"></div>
 	<div class="container">
 		<f:render section="content"/>
 	</div>
@@ -114,8 +114,7 @@ HERE INBETWEEN IS WHERE AJAX LOADED DYNAMIC CONTENT CAN BE ADDED:
 <f:if condition="{content_left}">
 <f:then>
 <section class="content content_left">
-	<div id="services" class="marker"></div>
-	<div id="service" class="marker"></div>
+	<div id="" class="marker"></div>
 	<div class="container">
 		<p>Seite ist im Aufbau. Mehr Information folgt in Kürze.</p>
 		<f:render section="content_left"/>
@@ -123,7 +122,6 @@ HERE INBETWEEN IS WHERE AJAX LOADED DYNAMIC CONTENT CAN BE ADDED:
 </section>
 </f:then>
 </f:if>
-
 
 
 
@@ -344,11 +342,20 @@ HERE INBETWEEN IS WHERE AJAX LOADED DYNAMIC CONTENT CAN BE ADDED:
 </section>
 
 
+
+<input id="contact" type="radio" value="contact"/>
+<section>
+	<div class="container">
+	</div>
+</section>
+
+
+
 <!-- fixed position elements: -->
 <f:render section="fixed_position_elements"/>
 
 
-</div><!-- wrapper -END -->
+</form><!-- wrapper -END -->
 
 <footer>
 	<div class="container">
