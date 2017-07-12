@@ -1,0 +1,59 @@
+<f:layout name="{settings.layout}"/><!!-- Index, but allows replacing via typo script -->
+
+<f:section name="first_section">
+	<f:if condition="{data.title}">
+		<f:then>
+			<h1 id="page-title">
+				{data.title}
+			</h1>
+			<h1 id="title" class="title">
+				Sabine Balzer
+			</h1>
+			<h1 id="first-title" class="big-title">
+				Buchhaltung, Lohnabrechnung
+			</h1>
+		</f:then>
+		<f:else>
+			<div class="row three-big" id="slogan">
+				<h1 style="display: block;" id="second-title" class="big-title">Buchhaltung. Lohnabrechnung</h1>
+				<h1 style="display: block;" id="first-title" class="big-title"><span>LOHTAX</span></h1>
+				<h1 style="display: block;text-align: center;" id="third-title" class="title">Berichterstattung, Dokumentation, Fotos, Publicity</h1>
+				-->
+			</div>
+		</f:else>
+	</f:if>
+
+
+	<div class="row">
+		<nav class="offset3	span8">
+			<ul class="row unstyled" id="nav-home">
+			</ul>
+		</nav>
+	</div>
+
+
+</f:section>
+
+
+
+
+<f:section name="content">
+	<f:format.raw>{content}</f:format.raw>
+</f:section>
+
+<f:section name="content_right">
+	<f:format.raw>{content_right}</f:format.raw>
+</f:section>
+
+<f:section name="content_left">
+	<f:format.raw>{content_left}</f:format.raw>
+</f:section>
+
+
+<!-- Allows different fixed position style elements for every page: -->
+<f:section name="fixed_position_elements">
+	<div class="loader_bar_horizontal"></div>
+</f:section>
+
+
+
