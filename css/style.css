@@ -188,6 +188,7 @@ h2
 	margin: 1.5rem 0;
 }
 
+
 h3
 {
 	font-size: 1.2rem;
@@ -218,6 +219,11 @@ figure
 	margin-left: 0;
 }
 
+section h2
+{
+	color: rgb(67, 198, 192);
+	text-shadow: 1px 1px 1px black;
+}
 section
 {
 	background-color: rgb(255,255,255);
@@ -225,13 +231,18 @@ section
 	background-color: rgba(255,255,255, .75);
 	*/
 	color: black;
-	text-shadow: 1px 1px 1px white;
+	text-shadow: 1px 1px 1px rgb(56, 62, 66);
 	margin-bottom: 0;
 	min-height: 60rem;
 	overflow: hidden;
 	padding-top: 0;
 	position: relative; /* To be reference for absolute pos of child. */
 	width: 100%;
+}
+section:nth-of-type(2n+1) h2
+{
+	color: black;
+	text-shadow: 1px 1px 1px white;
 }
 section:nth-of-type(2n+1)
 {
@@ -568,10 +579,18 @@ a#mini-logo img
 	color: white !important;
 	padding-right: .8rem;
 }
-#nav-home ul
-, ul.unstyled
-, .last-section ul
+/*
+ul.unstyled
+, section:last-of-type ul
+, section:last-of-type ol
 , ul.ce-uploads
+, #footer ul
+, footer ul
+, #footer ol
+, footer ol
+*/
+ul
+,ol
 {
 	list-style: none;
 }
