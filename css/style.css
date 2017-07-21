@@ -44,12 +44,15 @@ body {
 }
 
 header
+, div.header
 ,div.skewed
+,div.skewed_balance
 {
 	background: rgb(255, 255, 255);
 	height: 10rem;
 	width: 100%;
 	position: absolute;
+	top: 0;
 	z-index: 100;
 }
 header nav
@@ -57,8 +60,15 @@ header nav
 	height: 100%;
 	width: 100%;
 }
+div.header
+{
+	background-color: transparent;
+	z-index: 1000;
+}
+
 div.skewed
 {
+	right: 0;
 	top: 10rem;
 	-webkit-transform-origin: top left;
 	-moz-transform-origin: top left;
@@ -70,8 +80,26 @@ div.skewed
 	-ms-transform: skewY(-3deg);
 	-o-transform: skewY(-3deg);
 	transform: skewY(-3deg);
+	width: 63.1%;
 	z-index: 101;
 }
+div.skewed_balance
+{
+	top: 10rem;
+	-webkit-transform-origin: top right;
+	-moz-transform-origin: top right;
+	-ms-transform-origin: top right;
+	-o-transform-origin: top right;
+	transform-origin: top right;
+	-webkit-transform: skewY(3deg);
+	-moz-transform: skewY(3deg);
+	-ms-transform: skewY(3deg);
+	-o-transform: skewY(3deg);
+	transform: skewY(3deg);
+	width: 37%;
+	z-index: 1;
+}
+
 
 #referenzen ~ div img
 {
@@ -111,9 +139,13 @@ footer
 #footer p
 ,footer p
 {
-	padding-top: 3rem;
 	float: left;
 	height: 1rem;
+}
+#footer .container
+,footer .container
+{
+	width: 94%;
 }
 
 #footer ul
@@ -137,15 +169,32 @@ footer img {
 		max-height: 5rem;
 }
 
-.loader_bar_horizontal {
+.loader_bar_horizontal
+{
+	background-color: rgb(67, 198, 192);
+	height: .2rem;
+	left: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
 	width: 100%;
-	height: .2rem;
 	z-index: 100;
-	background-color: rgb(67, 198, 192);
 }
+
+.flowers_smile
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: transparent;
+	/*
+	background-image: url("../images/flowers_smile.png");
+	*/
+	background-repeat: no-repeat;
+	height: 100%;
+	width: auto;
+	z-index: 200;
+}
+
 
 /* Having this separate allows to apply these rules to a single global wrapper easily.
  The problem with the global wrapper as dimension limit is that each section may want
@@ -165,6 +214,23 @@ footer img {
 	padding-left: 3%;
 	text-align: left;
 	width: 70%;
+}
+
+div.z-index_fix
+{
+	position: relative;
+	z-index: 2000;
+}
+
+form#wrapper section:first-of-type
+{
+	z-index: 0;  /* allows flowers to smile */
+}
+
+form#wrapper .container:first-of-type h1
+, form#wrapper .container:first-of-type h2
+{
+	text-align: center;
 }
 
 .row
@@ -274,9 +340,9 @@ section:first-of-type label span
 section:first-of-type label
 {
 	position: absolute;
-	top: 17.75rem;
+	top: 18.75rem;
 	margin-top: -2.25rem;
-	left: 50%;
+	left: 66%;
 	margin-left: -7.5rem;
 	z-index: 105;
 	transition: transform 1s ease;
@@ -316,6 +382,7 @@ section:last-of-type
 }
 #page-title
 {
+	display: none;
 	position: absolute;
 	top: 8rem;
 	z-index: 102;
@@ -324,6 +391,7 @@ section:last-of-type
 	font-size: 1rem;
 	margin-right: .5rem;
 }
+
 section h1,
 .section-title
 {

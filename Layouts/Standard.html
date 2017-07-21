@@ -27,14 +27,24 @@
 <!-- ###DOCUMENT### -->
 
 
-<header>
-	<form class="container">
-		<nav class="navbar navbar-inverse navbar-fixed-top" style="opacity: .99; filter: alpha(opacity=99);">
+<form id="wrapper">
 
+<section>
+	<div class="container">
+		<f:render section="first_section"/>
+	</div>
+	<div id="logo" class="header">
+		<div class="container">
 			<a href="?" id="mini-logo">
 				<img src="fileadmin/template/images/logo.png" alt="" />
 				<span></span>
 			</a>
+		</div>
+	</div>
+
+<header>
+	<div class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="opacity: .99; filter: alpha(opacity=99);">
 
 			<!--
 			<button type="button">
@@ -52,18 +62,14 @@
 			</ul>
 			-->
 		</nav>
-	</form>
+	</div>
 </header>
 
 <div class="skewed"></div>
+<div class="skewed_balance"></div>
 
 
-<form id="wrapper">
-
-<section>
-	<div class="container">
-		<f:render section="first_section"/>
-	</div>
+	<img class="flowers_smile" src="fileadmin/template/images/flowers_smile.png" alt=""/>
 
 	<!-- for multipaging -->
 	<nav class="container" style="z-index: 1000000;">
@@ -362,22 +368,23 @@ HERE INBETWEEN IS WHERE AJAX LOADED DYNAMIC CONTENT CAN BE ADDED:
 <footer>
 	<div class="container">
 		<p>
-		All rights reserved.
-		</p>
-		<ul>
-		<li>
 			<a href="https://lohtax.de">
 				<img src="fileadmin/template/images/logo.png" alt="Mit uns k&ouml;nnen Sie rechnen."/>
 				<span id="mini-slogan"></span>
 			</a>
+		</p>
+		<ul>
+		<li>
 		</li>
 		<li>
 			<a href="https://typo3.org">
+				Powered by T3
 				<img src="typo3_src/typo3/sysext/backend/Resources/Public/Images/Logo.png" alt=""/>
 			</a>
 		</li>
 		<li>
 			<a href="https://ciry.at">
+				Created by worlddevelopment
 				<img src="../images/worlddevelopment.png" alt=""/>
 			</a>
 		</li>
